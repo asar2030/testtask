@@ -20,6 +20,7 @@
   letter-spacing: 3px;
   border-radius: 50px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .error {
@@ -28,32 +29,32 @@
 
 @font-face {
   font-family: 'SamsungOne';
-  src: url("./fonts/samsungone-400_v1.0-webfont.eot");
-  src: url("./fonts/samsungone-400_v1.0-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samsungone-400_v1.0-webfont.woff2") format("woff2"), url("./fonts/samsungone-400_v1.0-webfont.woff") format("woff"), url("./fonts/samsungone-400_v1.0-webfont.ttf") format("truetype"), url("./fonts/samsungone-400_v1.0-webfont.svg#samsungone400") format("svg");
+  src: url("../fonts/samsungone-400_v1.0-webfont.eot");
+  src: url("../fonts/samsungone-400_v1.0-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samsungone-400_v1.0-webfont.woff2") format("woff2"), url("../fonts/samsungone-400_v1.0-webfont.woff") format("woff"), url("../fonts/samsungone-400_v1.0-webfont.ttf") format("truetype"), url("../fonts/samsungone-400_v1.0-webfont.svg#samsungone400") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SamsungOne700';
-  src: url("./fonts/samsungone-700_v1.0-webfont.eot");
-  src: url("./fonts/samsungone-700_v1.0-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/samsungone-700_v1.0-webfont.woff2") format("woff2"), url("./fonts/samsungone-700_v1.0-webfont.woff") format("woff"), url("./fonts/samsungone-700_v1.0-webfont.ttf") format("truetype"), url("./fonts/samsungone-700_v1.0-webfont.svg#samsungone700") format("svg");
+  src: url("../fonts/samsungone-700_v1.0-webfont.eot");
+  src: url("../fonts/samsungone-700_v1.0-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/samsungone-700_v1.0-webfont.woff2") format("woff2"), url("../fonts/samsungone-700_v1.0-webfont.woff") format("woff"), url("../fonts/samsungone-700_v1.0-webfont.ttf") format("truetype"), url("../fonts/samsungone-700_v1.0-webfont.svg#samsungone700") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SamsungSharpSans';
-  src: url("./fonts/SamsungSharpSans-Bold.eot");
-  src: url("./fonts/SamsungSharpSans-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/SamsungSharpSans-Bold.woff2") format("woff2"), url("./fonts/SamsungSharpSans-Bold.woff") format("woff"), url("./fonts/SamsungSharpSans-Bold.ttf") format("truetype"), url("./fonts/SamsungSharpSans-Bold.svg#samsungone700") format("svg");
+  src: url("../fonts/SamsungSharpSans-Bold.eot");
+  src: url("../fonts/SamsungSharpSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"), url("../fonts/SamsungSharpSans-Bold.woff") format("woff"), url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype"), url("../fonts/SamsungSharpSans-Bold.svg#samsungone700") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: samsungIcon;
-  src: url("./fonts/samsungIcon.eot");
-  src: url("./fonts/samsungIcon.eot?#iefix") format("embedded-opentype"), url("./fonts/samsungIcon.woff") format("woff"), url("./fonts/samsungIcon.ttf") format("truetype");
+  src: url("../fonts/samsungIcon.eot");
+  src: url("../fonts/samsungIcon.eot?#iefix") format("embedded-opentype"), url("./fonts/samsungIcon.woff") format("woff"), url("./fonts/samsungIcon.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -230,21 +231,21 @@
 
 .choise_header {
   font-family: 'SamsungSharpSans';
-  font-size: 67px;
+  font-size: 57px;
   letter-spacing: 1px;
 }
 
 .choise_subheader {
-  margin-top: 35px;
+  margin-top: 45px;
   font-family: 'SamsungOne700';
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 500;
   letter-spacing: 1px;
 }
 
 .choise_text {
   margin-top: 22px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   width: 600px;
   line-height: 25px;
@@ -486,7 +487,7 @@
 .smartphones_table {
   margin: 75px auto 0;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid lightgray;
 }
 
 .smartphones_table th, .smartphones_table td {
@@ -501,15 +502,21 @@
 .smartphones_table th:nth-child(n+1), .smartphones_table td:nth-child(n+1) {
   padding-right: 90px;
   text-align: end;
+  font-weight: 700;
 }
 
 .smartphones_table th:nth-child(n+2), .smartphones_table td:nth-child(n+2) {
   text-align: start;
 }
 
+.smartphones_table td {
+  border-bottom: 1px solid lightgray;
+}
+
 .smartphones_table td:nth-child(n+2) {
   text-align: start;
   padding-left: 75px;
+  font-weight: normal;
 }
 
 .smartphones_table thead th {

@@ -12,7 +12,7 @@
     &_table {
         margin: 75px auto 0;
         border-collapse: collapse;
-        border: 1px solid black;
+        border: 1px solid lightgray;
         th, td {
             font-size: 24px;
             padding: 10px;
@@ -22,6 +22,7 @@
             &:nth-child(n+1) {
                 padding-right: 90px;
                 text-align: end;
+                font-weight: 700;
             }
             &:nth-child(n+2) {
                 text-align: start;
@@ -31,7 +32,9 @@
             &:nth-child(n+2) {
                 text-align: start;
                 padding-left: 75px;
+                font-weight: normal;
             }
+            border-bottom: 1px solid lightgray;
         }
         thead th {
             width: 37%;
