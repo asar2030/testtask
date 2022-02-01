@@ -1,0 +1,98 @@
+.registration {
+    &_header {
+        text-align: center;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    &_subheader {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+    &_form {
+        margin-top: 50px;
+        width: 571px;
+        min-height: 855px;
+        display: flex;
+        flex-direction: column;
+        margin: 110px auto 0;
+        padding: 55px 53px;
+        border: 1px solid black;
+        >input {
+            height: 50px;
+            padding: 20px;
+        }
+        &-special {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 18px;
+            > div {
+                max-width: 218px;
+                > label {
+                    font-weight: 600;
+                }
+                > input {
+                    height: 50px;
+                    padding: 20px;
+                }
+            }
+        }
+        > label {
+            margin-top: 15px;
+            font-weight: 600;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        &-checkbox {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            > input {
+                margin-right: 10px;
+                width: 30px;
+                height: 40px;
+            }
+            > label {
+                > a {
+                    color: black;
+                }
+            }
+        }
+        &-btn {
+            margin: 0 auto;
+            font-size: 9px;
+            margin: 47px auto 0;
+            width: 270px;
+            font-weight: bold;
+        }
+        &-maxfile {
+            margin-top: 17px;
+        }
+        &-remind {
+            margin-top: 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+
+}
+
+.form {
+    &-receipt {
+        position: relative;
+        > input {
+            opacity: 0;
+            position: absolute;
+            font-size: 0;
+            width: 100%;
+            height: 100%;
+        }
+        > div {
+            height: 50px;
+            border: 1px solid black;
+        }
+    }
+}

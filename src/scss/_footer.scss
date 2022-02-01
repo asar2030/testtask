@@ -1,0 +1,36 @@
+.footer {
+    padding-bottom: 80px;
+    &_header, &_subheader {
+        text-align: center;
+    }
+    &_header {
+        margin-top: 90px;
+        font-size: 40px;
+    }
+    &_subheader {
+        margin-top: 25px;
+        font-weight: normal;
+        font-size: 29px;
+    }
+    &_wrapper {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 130px;
+        row-gap: 45px;
+        column-gap: 20px;
+        &-item {
+            width: 160px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

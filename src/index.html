@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy A</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header_nav">
+                    <ul class="header_ul">                    
+                        <li><a href="/">мобильный устройства</a></li>
+                        <li><a href="/">тв и аудио</a></li>
+                        <li><a href="/">для дома</a></li>
+                        <li><a href="/">it</a></li>
+                    </ul>
+                    <img src="./img/svg/samsung.svg" class="header_samsung" alt="samsung">
+                    <ul class="header_ul">
+                        <li><a href="/">explore</a></li>
+                        <li><a href="/">акции</a></li>
+                        <li><a href="/">поддержка</a></li>
+                        <li><a href="/">бизнес</a></li>
+                        <img src="./img/svg/search.svg" alt="search" class="header_search">
+                    </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar1"></span><span class="bar2"></span><span class="bar3"></span>
+            </div>
+        </div>
+            <div class="header__hamburger">
+                <nav class="header__hamburger-nav ">
+                    <ul>
+                        <li><a href="#">мобильный устройства</a><div></div></li>
+                        <li><a href="#">тв и аудио</a><div></div></li>
+                        <li><a href="#">для дома</a><div></div></li>
+                        <li><a href="#">explore</a><div></div></li>
+                        <li><a href="#">акции</a><div></div></li>
+                        <li><a href="#">поддержка</a><div></div></li>
+                        <li><a href="#">бизнес</a><div></div></li>
+                    </ul>
+                </nav>
+                <div class="header__hamburger-close">&times;</div>
+            </div>
+    </header>
+    <main>
+        <section class="choise">
+            <div class="container choise_wrapper">
+                <h1 class="choise_header">Выбери Galaxy A</h1>
+                <h2 class="choise_subheader">Получи вкусный подарок с доставкой на дом!</h2>
+                <div class="choise_text">Купи смартфон серии Galaxy A. <br>
+                    Получи промо-код на 5000 или 7000 тенге в приложении Glovo. <br>
+                    Период акции: с 20 апреля по 26 апреля 2020 года</div>
+                <div class="choise_register">
+                    <button class="btn choise_sign">регистрация</button>
+                    <a href="/">узнать больше</a>
+                </div>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="container">
+                <h2 class="promo_header">Условия акции</h2>
+                <div class="promo_wrapper">
+                    <div class="promo_wrapper-item">
+                        <img src="./img/svg/icon1.svg" alt="">
+                        <div class="promo_wrapper-descr">Купи смартфон А-серии 
+                            из списка ниже в магазинах официальных партнеров Samsung</div>
+                    </div>
+                    <div class="promo_wrapper-item">
+                        <img src="./img/svg/icon2.svg" alt="">
+                        <div class="promo_wrapper-descr">Зарегистрируй чек покупки 
+                            на сайте, прикрепив его фото
+                            </div>
+                    </div>
+                    <div class="promo_wrapper-item">
+                        <img src="./img/svg/icon3.svg" alt="">
+                        <div class="promo_wrapper-descr">Получи промо-код на 5000 или 7000 тенге в в приложении Glovo. </div>
+                    </div>
+                </div>
+                <button class="btn promo_rules">полные правила</button>
+                <h3 class="promo_deliv">Доставка <b>Glovo</b> доступна в трех городах: <b>Нур-Султан, Алматы и Шымкент</b></h3>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="container">
+                <h2 class="registration_header">Регистрация</h2>
+                <h3 class="registration_subheader">Заполни форму ниже и участвуй в <b>розыгрыше призов.</b></h3>
+                <form class="registration_form">
+                    <div id="error"></div>
+                    <label>ФИО</label>
+                    <input name="name" type="text" class="form-name form-inputs">
+                    <label>Город</label>
+                    <input name="city" class="form-inputs" type="text">
+                    <div class="registration_form-special">
+                        <div>
+                            <label>Номер телефона</label>
+                            <input name="tel" class="form-tel form-inputs" type="text">
+                        </div>
+                        <div>
+                            <label>Ваш email</label>
+                            <input name="email" class="form-mail form-inputs" type="email">
+                        </div>
+                    </div>
+                    <div class="registration_form-special">
+                        <div>
+                            <label>Партнер</label>
+                            <input name="partner" type="text" class="form-inputs">
+                        </div>
+                        <div>
+                            <label>Устройство</label>
+                            <input name="device" type="text" class="form-inputs">
+                        </div>
+                    </div>
+                    <label>Дата покупки</label>
+                    <input name="buyDate" type="text" class="form-inputs">
+                    <label for="receipt">Загрузите чек</label>
+                    <div class="form-receipt">
+                        <input name="receipt" type="file" class=" form-receipt-input" accept=".jpg, .png">
+                        <div class="form-receipt-fake"></div>
+                    </div>
+                    <div class="registration_form-maxfile">Размер фотографии не должен привышать 5Мб</div>
+                    <div class="registration_form-checkbox">
+                        <input required class="form-inputs form-checkbox" type="checkbox"> <label>Я ознакомлен и согласен с <a href="/">правилами и условиями передачи персональных данных.</a></label>
+                    </div>
+                    <div class="registration_form-remind">Убедитесь в правильности введенного электронного адреса и номера телефона. Мы отправим оповещение с результатом модерации.</div>
+                    <button class="btn registration_form-btn">Отправить данные</button>
+                </form>
+            </div>
+        </section>
+        <section class="smartphones">
+            <div class="container">
+                <h2 class="smartphones_header">Модели смартфонов, 
+                    участвующие в Акции</h2>
+                <table class="smartphones_table">
+                    <thead>
+                        <tr>
+                            <th>Модель</th>
+                            <th>Сумма промо-кода</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Galaxy-A51</td>
+                            <td>5,000 тенге</td>
+                        </tr>
+                        <tr>
+                            <td>Galaxy-A70</td>
+                            <td>5,000 тенге</td>
+                        </tr>
+                        <tr>
+                            <td>Galaxy-A71</td>
+                            <td>5,000 тенге</td>
+                        </tr>
+                        <tr>
+                            <td>Galaxy-A80</td>
+                            <td>5,000 тенге</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn smartphones_btn">Подробнее</button>
+            </div>
+        </section>
+        <div class="phones"></div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer_header">В акции участвуют точки продаж официальных <br> партнеров Samsung </h2>
+            <h3 class="footer_subheader">Выбери нужный из списка магазинов в твоем городе</h3>
+            <div class="footer_wrapper">
+                <a href="/" class="footer_wrapper-item">Sulpak</a>
+                <a href="/" class="footer_wrapper-item">Kcell</a>
+                <a href="/" class="footer_wrapper-item">Mechta</a>
+                <a href="/" class="footer_wrapper-item">Evrika</a>
+                <a href="/" class="footer_wrapper-item">Fora</a>
+                <a href="/" class="footer_wrapper-item">technodom</a>
+                <a href="/" class="footer_wrapper-item">alser</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

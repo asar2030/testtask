@@ -1,0 +1,96 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 984px;
+        width: unset;
+    }
+    .header {
+        &_nav {
+            display: none;
+        }
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .hamburger {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 728px;
+    }
+    .choise {
+        height: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+        &_header {
+            font-size: 60px;
+        }
+        &_text {
+            width: 100%;
+        }
+    }
+    .promo {
+        &_wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            &-item {
+                &:nth-child(2) {
+                    &::before, &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    .registration {
+        &_form {
+            width: 100%;
+            padding: 40px 40px;
+            &-special {
+                display: block;
+                > div {
+                    width: 100%;
+                    max-width: none;
+                    > input {
+                        width: 100%;
+                    }
+                }
+            }
+            &-btn {
+                width: 100%;
+            }
+        }
+    }
+    .smartphones {
+        &_header {
+            width: 100%;
+        }
+        &_table {
+            th, td {
+                padding: 10px;
+                &:nth-child(n+1) {
+                    padding-right: unset;
+                    text-align: unset;
+                }
+            }
+        }
+    }
+    .footer {
+        &_wrapper {
+            padding: 0;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,103 @@
+.header {
+    padding: 20px 0;
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_ul>li {
+        list-style-type: none;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &_ul>li>a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    &_search {
+        width: 20px;
+    }
+    &_samsung {
+        margin-right: 14px;
+        width: 105px;
+    }
+    &__hamburger {
+        width: 100%;
+        height: 100vh;
+        background-color:#030303;
+        position: absolute;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+        opacity: 0;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-nav {
+            >ul {
+              display: flex;
+              flex-direction: column;
+              :last-child {
+                margin-bottom: 0;
+              }
+              >li {
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+                >a {
+                  font-size: 20px;
+                  letter-spacing: 2px;
+                  cursor: pointer;
+                  transition: 0.3s all;
+                  color: white;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                }
+              }
+            }
+        }
+        &-close {
+            position: absolute;
+            color: white;
+            font-size: 36px;
+            top: 0;
+            right: 20px;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+  }
+
+.hamburger-show {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+  
+.hamburger {
+    :last-child {
+      margin-bottom: 0;
+    }
+    span {
+      display: block;
+      width: 32px;
+      height: 2px;
+      margin-bottom: 6px;
+      background-color: #000000;
+      cursor: pointer;
+    }
+}
